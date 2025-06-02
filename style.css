@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* AliceBlue - светлый фон для контраста */
+    color: #000080; /* Navy - основной цвет текста */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#hform {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 128, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #000080; /* Navy */
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4682b4; /* SteelBlue - границы */
+    border-radius: 4px;
+    font-size: 16px;
+    color: #000080; /* Navy */
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #000080; /* Navy */
+    box-shadow: 0 0 5px rgba(0, 0, 128, 0.3);
+}
+
+select[multiple] {
+    height: 120px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    display: inline;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    accent-color: #000080; /* Navy */
+}
+
+button[type="submit"] {
+    background-color: #000080; /* Navy */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #191970; /* MidnightBlue - более темный оттенок */
+}
+
+.error {
+    color: #b22222; /* FireBrick - для ошибок */
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Стили для чекбокса соглашения */
+#agreement {
+    width: auto;
+    display: inline;
+}
+
+#agreement + label {
+    display: inline;
+    font-weight: normal;
+}

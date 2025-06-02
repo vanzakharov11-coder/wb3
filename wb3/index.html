@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>wb3</title>
+  <link rel="stylesheet" href="style1.css">
+  </head>
+  <body>
+    <div id="hform">
+        <form id="form" action="index.php" method="POST">
+            <div>
+                <label for="fio">ФИО:</label>
+                <input type="text" id="fio" name="fio" required>
+                <span class="error" id="fio_error"></span>
+            </div>
+        
+            <div>
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <span class="error" id="phone_error"></span>
+            </div>
+        
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="email_error"></span>
+            </div>
+        
+            <div>
+                <label for="dob">Дата рождения:</label>
+                <input type="date" id="dob" name="dob" required>
+                <span class="error" id="dob_error"></span>
+            </div>
+        
+            <div>
+                <label>Пол:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Мужской</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Женский</label>
+                <span class="error" id="gender_error"></span>
+            </div>
+        
+            <div>
+                <label>Любимые языки программирования:</label><br>
+                <select name="languages[]" multiple required>
+                    <option value="Pascal">Pascal</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="Haskell">Haskell</option>
+                    <option value="Clojure">Clojure</option>
+                    <option value="Prolog">Prolog</option>
+                    <option value="Scala">Scala</option>
+                    <option value="Go">Go</option>
+                </select>
+                <span class="error" id="languages_error"></span>
+            </div>
+        
+            <div>
+                <label for="bio">Биография:</label>
+                <textarea id="bio" name="bio" rows="4" cols="50" required></textarea>
+                <span class="error" id="bio_error"></span>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">С контрактом ознакомлен(а)</label>
+                <span class="error" id="agreement_error"></span>
+            </div>
+        
+            <button type="submit">Сохранить</button>
+        </form>
+      </div>
+  </body>
+</html>
